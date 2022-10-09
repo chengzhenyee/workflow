@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('uuid')->unique();
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->unsignedBigInteger('owner_id');
             $table->softDeletes();
             $table->timestamps();
