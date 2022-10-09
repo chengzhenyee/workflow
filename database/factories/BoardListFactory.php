@@ -27,7 +27,7 @@ class BoardListFactory extends Factory
     {
         return [
             'board_id' => Board::factory(),
-            'name' => $this->faker->word(),
+            'title' => $this->faker->word(),
             'description' => $this->faker->realText(),
         ];
     }

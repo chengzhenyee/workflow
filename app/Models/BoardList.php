@@ -18,7 +18,7 @@ class BoardList extends Model
      * @var string[]
      */
     protected $fillable = [
-        'board_id', 'name', 'description',
+        'board_id', 'title', 'description',
     ];
 
     /** 
