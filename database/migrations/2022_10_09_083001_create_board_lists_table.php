@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('uuid')->unique();
             $table->unsignedBigInteger('board_id');
             $table->string('title');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->softDeletes();
             $table->timestamps();
 
